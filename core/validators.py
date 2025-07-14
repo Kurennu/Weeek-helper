@@ -9,6 +9,7 @@ def validate_title(title):
         'создать', 'добавить', 'удалить', 'изменить',
         'обновить', 'исправить', 'настроить', 'проверить'
     ]
+    
     has_verb = any(verb in title.lower() for verb in verbs)
 
     if not has_verb:
